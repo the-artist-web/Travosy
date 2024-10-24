@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- favicon -->
+        <link rel="icon" href="./src/assets/image/favicon.png" />
+        <!-- meta tags -->
+        <title>Travosy</title>
+        <meta name="title" content="Travosy" />
+        <meta name="description" content="Booaty of Discovers Lets travel the 
+        world with us Planning for a trip?<br /> We will organize your trip 
+        with the best places and within best budget!" />
+        <meta name="keywords" content="Html, Css, Boostrap, Java script" />
+        <meta name="author" content="the artist web" />
+        <!-- google font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" 
+        rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet" />
+        <!-- custom cdnjs link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- custom bootstrap min css link -->
+        <link rel="stylesheet" href="./src/assets/css/bootstrap.min.css" />
+        <!-- custom css link -->
+        <link rel="stylesheet" href="./src/assets/css/Travost.css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar p-0 position-fixed top-0 left-0 rigth-0 z-3 w-100" data-navbar>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img 
+                        src="./src/assets/image/logo.png" 
+                        alt="Travosy"
+                        loading="lazy"
+                        class="img-cover"
+                    />
+                </a>
+
+                <ul class="d-none align-items-center gap-5 p-0 m-0 d-lg-flex">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link p-0 text-capitalize label-small">home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#destination" class="nav-link p-0 text-capitalize label-small">Destination</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link p-0 text-capitalize label-small">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#package" class="nav-link p-0 text-capitalize label-small">Package</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#testimonial" class="nav-link p-0 text-capitalize label-small">Testimonial</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link p-0 text-capitalize label-small">Contact</a>
+                    </li>
+                </ul>
+
+                <button
+                    type="button"
+                    class="btn btn-icon label-large p-0 border-0 d-lg-none"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling"
+                    data-gsap-open-aside
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- ASIDE -->
+        <aside class="offcanvas offcanvas-end aside w-100" id="offcanvasScrolling" data-aside>
+            <div class="offcanvas-header px-3 py-0 d-flex align-items-center justify-content-end">
+                <button 
+                    type="button" 
+                    class="btn btn-icon border-0 p-0 label-large"
+                    data-bs-dismiss="offcanvas"
+                    data-gsap-close-aside
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <ul class="d-flex flex-column gap-3">
+                <li class="nav-item">
+                    <a 
+                        href="#home" 
+                        class="aside-link p-0 text-capitalize label-large" 
+                        data-aside-link 
+                        data-gsap-slow-loading-aside-link-up
+                    >home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a 
+                        href="#destination" 
+                        class="aside-link p-0 text-capitalize label-large" 
+                        data-aside-link 
+                        data-gsap-slow-loading-aside-link-up
+                    >Destination</a>
+                </li>
+
+                <li class="nav-item">
+                    <a 
+                        href="#about" 
+                        class="aside-link p-0 text-capitalize label-large" 
+                        data-aside-link 
+                        data-gsap-slow-loading-aside-link-up
+                    >About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a 
+                        href="#package" 
+                        class="aside-link p-0 text-capitalize label-large" 
+                        data-aside-link 
+                        data-gsap-slow-loading-aside-link-up
+                    >Package</a>
+                </li>
+
+                <li class="nav-item">
+                    <a 
+                        href="#testimonial" 
+                        class="aside-link p-0 text-capitalize label-large" 
+                        data-aside-link 
+                        data-gsap-slow-loading-aside-link-up
+                    >Testimonial</a>
+                </li>
+
+                <li class="nav-item">
+                    <a 
+                        href="#contact" 
+                        class="aside-link p-0 text-capitalize label-large" 
+                        data-aside-link 
+                        data-gsap-slow-loading-aside-link-up
+                    >Contact</a>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <article>
+                <!-- HERO -->
+                <section class="hero d-flex align-items-center jsutify-content-center section" id="home">
+                    <div class="container position-relative">
+                        <div class="hero-body mb-5 w-100">
+                            <p class="text-top p-0 mb-2 fw-bold title-medium" data-gsap-up>Boomty of Discovers</p>
+                            <h1 class="title p-0 mb-3 display-large" data-gsap-up>Lets travel the <br /> world with us</h1>
+                            <p class="description p-0 mb-4 label-small" data-gsap-down>
+                                Planning for a trip? We will organize your trip with the best places and within best budget!
+                            </p>
+
+                            <div class="d-flex flex-wrap align-items-center gap-4">
+                                <button 
+                                    type="button" 
+                                    class="btn main-btn rounded-pill border-0 py-2 px-4 text-capitalize label-small"
+                                    data-gsap-slow-loading-down
+                                >See More</button>
+
+                                <button 
+                                    type="button" 
+                                    class="btn other-btn rounded-pill border-2 py-2 px-4 text-capitalize label-small"
+                                    data-gsap-slow-loading-down
+                                >Choose tour</button>
+                            </div>
+                        </div>
+
+                        <button 
+                            type="button" 
+                            class="btn btn-play d-none p-0 rounded-pill position-absolute border-0 d-lg-block label-small" 
+                            style="top: 180px; right: 400px;"
+                        >
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                        <ul class="d-flex align-items-center gap-3 gap-lg-5 flex-wrap p-0">
+                            <li 
+                                class="card card-hero p-0 border-0 bg-transparent" 
+                                data-gsap-hero-card-up
+                                data-gsap-slow-loading-up
+                            >
+                                <figure>
+                                    <img 
+                                        src="./src/assets/image/h1.jpg" 
+                                        alt="hero 1"
+                                        loading="lazy"
+                                        class="img-card pb-1 img-cover"
+                                    />
+                                </figure>
+                                <p class="title-card text-center p-0 m-0">Sdtours</p>
+                            </li>
+
+                            <li 
+                                class="card card-hero p-0 border-0 bg-transparent" 
+                                data-gsap-hero-card-up
+                                data-gsap-slow-loading-up
+                            >
+                                <figure>
+                                    <img 
+                                        src="./src/assets/image/h2.jpg" 
+                                        alt="hero 2"
+                                        loading="lazy"
+                                        class="img-card pb-1 img-cover"
+                                    />
+                                </figure>
+                                <p class="title-card text-center p-0 m-0">Weddingtours</p>
+                            </li>
+
+                            <li 
+                                class="card card-hero p-0 border-0 bg-transparent" 
+                                data-gsap-hero-card-up
+                                data-gsap-slow-loading-up
+                            >
+                                <figure>
+                                    <img 
+                                        src="./src/assets/image/h3.jpg" 
+                                        alt="hero 3"
+                                        loading="lazy"
+                                        class="img-card pb-1 img-cover"
+                                    />
+                                </figure>
+                                <p class="title-card text-center p-0 m-0">Shop tours</p>
+                            </li>
+
+                            <li 
+                                class="card card-hero p-0 border-0 bg-transparent" 
+                                data-gsap-hero-card-up
+                                data-gsap-slow-loading-up
+                            >
+                                <figure>
+                                    <img 
+                                        src="./src/assets/image/h4.jpg" 
+                                        alt="hero 4"
+                                        loading="lazy"
+                                        class="img-card pb-1 img-cover"
+                                    />
+                                </figure>
+                                <p class="title-card text-center p-0 m-0">Excursiontours</p>
+                            </li>
+
+                            <li 
+                                class="card card-hero p-0 border-0 bg-transparent" 
+                                data-gsap-hero-card-up
+                                data-gsap-slow-loading-up
+                            >
+                                <figure>
+                                    <img 
+                                        src="./src/assets/image/h5.jpg" 
+                                        alt="hero 5"
+                                        loading="lazy"
+                                        class="img-card pb-1 img-cover"
+                                    />
+                                </figure>
+                                <p class="title-card text-center p-0 m-0">SPAtours</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- DESTINATION -->
+                <section class="destination section" id="destination">
+                    <div class="container">
+                        <div class="d-flex align-items-center justify-content-between gap-3 mb-5">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="text-top-header m-0 p-0 title-medium" data-gsap-destination-up>Destination</p>
+                                <h2 class="headline-small" data-gsap-destination-down>Popular destination</h2>
+                            </div>
+
+                            <a 
+                                href="#" 
+                                class="btn btn-header-body rounded-pill p-0 d-none d-lg-flex align-items-center justify-content-center label-small"
+                                data-gsap-destination-right    
+                            >
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                            <div class="col" data-gsap-destination-slow-loading-up>
+                                <div class="card card-destination border-0 bg-transparent rounded-5 overflow-hidden">
+                                    <img 
+                                        src="./src/assets/image/d1.jpg" 
+                                        alt="d1" 
+                                        loading="lazy"
+                                        class="img-card img-cover"
+                                    />
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; right: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col" data-gsap-destination-slow-loading-up>
+                                <div class="card card-destination border-0 bg-transparent rounded-5 overflow-hidden">
+                                    <img 
+                                        src="./src/assets/image/d2.jpg" 
+                                        alt="d2" 
+                                        loading="lazy"
+                                        class="img-card img-cover"
+                                    />
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; right: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col" data-gsap-destination-slow-loading-up>
+                                <div class="card card-destination border-0 bg-transparent rounded-5 overflow-hidden">
+                                    <img 
+                                        src="./src/assets/image/d3.jpg" 
+                                        alt="d3" 
+                                        loading="lazy"
+                                        class="img-card img-cover"
+                                    />
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; right: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col" data-gsap-destination-slow-loading-up>
+                                <div class="card card-destination border-0 bg-transparent rounded-5 overflow-hidden">
+                                    <img 
+                                        src="./src/assets/image/d4.jpg" 
+                                        alt="d4" 
+                                        loading="lazy"
+                                        class="img-card img-cover"
+                                    />
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; right: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ABOUT US -->
+                <section class="about section" id="about">
+                    <div class="container row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-lg-center">
+                        <div class="col">
+                            <div class="about-body">
+                                <p class="text-about p-0 mb-3 text-capitalize title-medium" data-gsap-about-up>About us</p>
+                                <h1 class="p-0 mb-3 display-small" data-gsap-about-up>We create journeys for the excited us</h1>
+                                <p class="description-about p-0 mb-4 label-small" data-gsap-about-down>Planning for a trip? We will organize your trip with the best places and within best budget!</p>
+                                <button 
+                                    type="button" 
+                                    class="btn main-btn rounded-pill border-0 py-2 px-4 text-capitalize label-small"
+                                    data-gsap-about-down
+                                >learn more</button>
+                            </div>
+                        </div>
+
+                        <div class="col" data-gsap-zoom-img>
+                            <img 
+                                src="./src/assets/image/about.png" 
+                                alt="about us"
+                                loading="lazy"
+                                class="img-cover" 
+                            />
+                        </div>
+
+                        <div class="col">
+                            <div class="d-flex flex-column gap-4">
+                                <div 
+                                    class="card-about d-flex flex-column align-items-lg-center gap-2 gap-lg-4 border-0 bg-transparent flex-lg-row"
+                                    data-gsap-card-about
+                                >
+                                    <figure class="d-flex align-items-center justify-content-center rounded-pill">
+                                        <img 
+                                            src="./src/assets/image/a1.png" 
+                                            alt="a1" 
+                                            loading="lazy"
+                                            class="img-cover"
+                                        />
+                                    </figure>
+
+                                    <div class="card-body">
+                                        <h3 class="label-large">Tour guide</h3>
+                                        <p class="description-about p-0 m-0 label-small">
+                                            Thee is just a simple text made for thes unique and awesome template
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div 
+                                    class="card-about d-flex flex-column align-items-lg-center gap-2 gap-lg-4 border-0 bg-transparent flex-lg-row"
+                                    data-gsap-card-about
+                                >
+                                    <figure class="d-flex align-items-center justify-content-center rounded-pill">
+                                        <img 
+                                            src="./src/assets/image/a2.png" 
+                                            alt="a2" 
+                                            loading="lazy"
+                                            class="img-cover"
+                                        />
+                                    </figure>
+
+                                    <div class="card-body">
+                                        <h3 class="label-large">Friendly price</h3>
+                                        <p class="description-about p-0 m-0 label-small">
+                                            Thee is just a simple text made for thes unique and awesome template
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div 
+                                    class="card-about d-flex flex-column align-items-lg-center gap-2 gap-lg-4 border-0 bg-transparent flex-lg-row"
+                                    data-gsap-card-about
+                                >
+                                    <figure class="d-flex align-items-center justify-content-center rounded-pill">
+                                        <img 
+                                            src="./src/assets/image/a3.png" 
+                                            alt="a3" 
+                                            loading="lazy"
+                                            class="img-cover"
+                                        />
+                                    </figure>
+
+                                    <div class="card-body">
+                                        <h3 class="label-large">Instant booking</h3>
+                                        <p class="description-about p-0 m-0 label-small">
+                                            Thee is just a simple text made for thes unique and awesome template
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PACKAGE -->
+                <section class="package section" id="package">
+                    <div class="container">
+                        <div class="d-flex flex-column align-items-center justify-content-center gap-2 mb-5">
+                            <p class="text-top-package p-0 m-0 title-medium" data-gsap-package-up>Popular pachager</p>
+                            <h3 class="m-0 p-0 headline-small" data-gsap-package-down>Find popular tours</h3>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col" data-gsap-card-package>
+                                <div class="card card-package border-0 bg-transparent rounded-3 overflow-hidden position-relative">
+                                    <figure class="overlfow-hidden">
+                                        <img 
+                                            src="./src/assets/image/p1.jpg"
+                                            alt="p1"
+                                            loading="lazy"
+                                            class="h-100 img-cover"
+                                        />
+                                    </figure>
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; left: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                    
+                                    <div class="card-body p-4 pt-1 position-relative">
+                                        <button type="button" class="btn btn-card rounded-pill position-absolute p-0 label-small" style="top: -27.5px; right: 15%;">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+
+                                        <h3 class="money p-0 mb-2 label-large">$62.24</h3>
+                                        <h3 class="p-0 mb-3 label-large">Asian discovery</h3>
+
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-location-dot || i"></i> Agods surursu</p>
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-clock || i"></i> 4 Days</p>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class="col" data-gsap-card-package>
+                                <div class="card card-package border-0 bg-transparent rounded-3 overflow-hidden position-relative">
+                                    <figure class="overlfow-hidden">
+                                        <img 
+                                            src="./src/assets/image/p2.jpg"
+                                            alt="p2"
+                                            loading="lazy"
+                                            class="h-100 img-cover"
+                                        />
+                                    </figure>
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; left: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                    
+                                    <div class="card-body p-4 pt-1 position-relative">
+                                        <button type="button" class="btn btn-card rounded-pill position-absolute p-0 label-small" style="top: -27.5px; right: 15%;">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+
+                                        <h3 class="money p-0 mb-2 label-large">$62.24</h3>
+                                        <h3 class="p-0 mb-3 label-large">Asian discovery</h3>
+
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-location-dot || i"></i> Agods surursu</p>
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-clock || i"></i> 4 Days</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-gsap-card-package>
+                                <div class="card card-package border-0 bg-transparent rounded-3 overflow-hidden position-relative">
+                                    <figure class="overlfow-hidden">
+                                        <img 
+                                            src="./src/assets/image/p3.jpg"
+                                            alt="p3"
+                                            loading="lazy"
+                                            class="h-100 img-cover"
+                                        />
+                                    </figure>
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; left: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                    
+                                    <div class="card-body p-4 pt-1 position-relative">
+                                        <button type="button" class="btn btn-card rounded-pill position-absolute p-0 label-small" style="top: -27.5px; right: 15%;">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+
+                                        <h3 class="money p-0 mb-2 label-large">$62.24</h3>
+                                        <h3 class="p-0 mb-3 label-large">Asian discovery</h3>
+
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-location-dot || i"></i> Agods surursu</p>
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-clock || i"></i> 4 Days</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-gsap-card-package>
+                                <div class="card card-package border-0 bg-transparent rounded-3 overflow-hidden position-relative">
+                                    <figure class="overlfow-hidden">
+                                        <img 
+                                            src="./src/assets/image/p4.jpg"
+                                            alt="p4"
+                                            loading="lazy"
+                                            class="h-100 img-cover"
+                                        />
+                                    </figure>
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; left: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                    
+                                    <div class="card-body p-4 pt-1 position-relative">
+                                        <button type="button" class="btn btn-card rounded-pill position-absolute p-0 label-small" style="top: -27.5px; right: 15%;">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+
+                                        <h3 class="money p-0 mb-2 label-large">$62.24</h3>
+                                        <h3 class="p-0 mb-3 label-large">Asian discovery</h3>
+
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-location-dot || i"></i> Agods surursu</p>
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-clock || i"></i> 4 Days</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-gsap-card-package>
+                                <div class="card card-package border-0 bg-transparent rounded-3 overflow-hidden position-relative">
+                                    <figure class="overlfow-hidden">
+                                        <img 
+                                            src="./src/assets/image/p5.jpg"
+                                            alt="p5"
+                                            loading="lazy"
+                                            class="h-100 img-cover"
+                                        />
+                                    </figure>
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; left: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                    
+                                    <div class="card-body p-4 pt-1 position-relative">
+                                        <button type="button" class="btn btn-card rounded-pill position-absolute p-0 label-small" style="top: -27.5px; right: 15%;">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+
+                                        <h3 class="money p-0 mb-2 label-large">$62.24</h3>
+                                        <h3 class="p-0 mb-3 label-large">Asian discovery</h3>
+
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-location-dot || i"></i> Agods surursu</p>
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-clock || i"></i> 4 Days</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-gsap-card-package>
+                                <div class="card card-package border-0 bg-transparent rounded-3 overflow-hidden position-relative">
+                                    <figure class="overlfow-hidden">
+                                        <img 
+                                            src="./src/assets/image/p6.jpg"
+                                            alt="p6"
+                                            loading="lazy"
+                                            class="h-100 img-cover"
+                                        />
+                                    </figure>
+
+                                    <button type="button" class="btn btn-evaluation px-2 py-1 border-0 rounded-2 position-absolute label-small" style="top: 20px; left: 20px;">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        0.2
+                                    </button>
+                                    
+                                    <div class="card-body p-4 pt-1 position-relative">
+                                        <button type="button" class="btn btn-card rounded-pill position-absolute p-0 label-small" style="top: -27.5px; right: 15%;">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+
+                                        <h3 class="money p-0 mb-2 label-large">$62.24</h3>
+                                        <h3 class="p-0 mb-3 label-large">Asian discovery</h3>
+
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-location-dot || i"></i> Agods surursu</p>
+                                            <p class="p-0 m-0 label-small"><i class="fa-solid fa-clock || i"></i> 4 Days</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TESTIMONIAL -->
+                <section class="testimonial section" id="testimonial">
+                    <div class="container row row-cols-1 row-cols-lg-2 g-5 align-items-center">
+                        <div class="col" data-gsap-testimonial>
+                            <div class="testimonial-body">
+                                <p class="text-about p-0 mb-3 text-capitalize title-medium">Testimonial</p>
+                                <h1 class="p-0 mb-3 display-small">What traveler says</h1>
+                                <p class="description-about p-0 mb-4 label-small">doe't just work with concrete and steel, We are Approachable, with even ourhighest concrete and steel. Wer work with people</p>
+                                <button 
+                                    type="button" 
+                                    class="btn main-btn rounded-pill border-0 py-2 px-4 text-capitalize label-small"
+                                >Find Out More</button>
+                            </div>
+                        </div>
+
+                        <div class="col" data-gsap-testimonial>
+                            <div class="card card-testimonial position-relative border-0 rounded-4">
+                                <img 
+                                    src="./src/assets/image/t.webp" 
+                                    alt="testimonial" 
+                                    loading="lazy"
+                                    class="img-card rounded-pill img-cover"
+                                />
+
+                                <div class="card-body p-4">
+                                    <p class="p-0 mb-3 label-small">
+                                        We don't just work with concrete and steel. We are Approachable, with even our highest concrete and steel. We work with people concrete
+                                    </p>
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-grid gap-1">
+                                            <p class="block block-top py-2 px-3 m-0 text-center w-auto label-medium">Wastson Karm</p>
+                                            <p class="block block-bottom p-2 m-0 text-center w-auto label-small">Fementum Odio Co</p>
+                                        </div>
+
+                                        <div class="d-none d-lg-flex align-items-center gap-2 text-warning label-small">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-top pb-5">
+                    <h1 class="mb-4 headline-small">Quick Links:</h1>
+
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-5">
+                        <div class="col d-flex flex-column gap-3" data-gsap-footer-up>
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                Recent Work
+                            </a>
+
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                Branding
+                            </a>
+
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                Our Story
+                            </a>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-3" data-gsap-footer-up>
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                Product Gallery
+                            </a>
+
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                Wet & Interactive
+                            </a>
+
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                Help & support
+                            </a>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-3" data-gsap-footer-up>
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                About Us
+                            </a>
+
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                Branded Marchandise
+                            </a>
+
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                Our Awards
+                            </a>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-3" data-gsap-footer-up>
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-phone"></i>
+                                01646895741
+                            </a>
+
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-envelope-open"></i>
+                                Branded Marchandise
+                            </a>
+
+                            <a href="#" class="footer-link d-flex align-items-center gap-2 label-small">
+                                <i class="fa-solid fa-location-dot"></i>
+                                932 Gavin St. Pompanofleach, FL 33060
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="text-center p-0 m-0 label-small">Copyright (c) 2024 the artist web</p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- custom bootstrap bundle min js link -->
+        <script src="./src/bootstrap.bundle.min.js"></script>
+        <!-- custom js link -->
+        <script src="./src/Script.js"></script>
+        <!-- custom gsap link -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <!-- get ScrollTrigger -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    </body>
+</html>
