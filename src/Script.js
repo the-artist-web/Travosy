@@ -355,8 +355,8 @@ document.addEventListener("DOMContentLoaded", () => {
         stagger: 0.3,
         scrollTrigger: {
             trigger: "[data-gsap-footer-up]",
-            start: "top 60%",
-            end: "top 25%",
+            start: "top 75%",
+            end: "top 20%",
         }
     });
 });
